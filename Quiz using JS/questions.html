@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questions.css">
+    <script src="https://kit.fontawesome.com/c86a136e84.js" crossorigin="anonymous"></script>
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div id="quiz_box">
+        <header>
+            <div id="title">
+                Quiz Application
+            </div>
+            <div class="timer">
+                <div class="time_text">
+                    Time Left
+                </div>
+                <div id="timer_sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div id="que_text">
+                <span>What does HTML stands for ?</span>
+            </div>
+            <div class="option_list">
+                <div class="option" id="option1" onclick="select_option_1()">
+                    <span>Hyper text Processor</span>
+                    <!-- <div class="cross icon"><i class="fas fa-times"></i></div> -->
+                </div>
+                <div class="option" id="option2" onclick="select_option_2()">
+                    <span>Hyper Text Markup Language</span>
+                    <!-- <div class="tick icon"><i class="fas fa-check"></i></div> -->
+                </div>
+                <div class="option" id="option3" onclick="select_option_3()">
+                    <span>Hyper Text Multiple Language</span>
+                    <!-- <div class="cross icon"><i class="fas fa-times"></i></div> -->
+                </div>
+                <div class="option" id="option4" onclick="select_option_4()">
+                    <span>Hyper Tool Multi Language</span>
+                    <!-- <div class="cross icon"><i class="fas fa-times"></i></div> -->
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+                <span>
+                    <p id="question_number">1</p>of<p>5</p>Questions
+                </span>
+            </div>
+            <button class="next_btn" onclick="next_question()">Next Que</button>
+        </footer>
+    </div>
+    <div id="result_box">
+        Marks Scored : <span id="marks_scored">5</span>
+    </div>
+    <script src="questions.js"></script>
+</body>
+
+</html>
